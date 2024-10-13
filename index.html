@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>Palavras Cafeinadas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar" class="font-emphasis">
+            <ul>
+                <li class="menu-hidden">
+                    <a href="#section-sobre-nos">
+                        <p>Sobre nós</p>
+                        <img src="assets/img/detalhe.jpg" alt="detalhe do botão" class="nav-btn-detail">
+                    </a>
+                </li>
+                <li class="menu-hidden">
+                    <a href="#section-cafeteria">
+                        <p>Cafeteria</p>
+                        <img src="assets/img/detalhe.jpg" alt="detalhe do botão" class="nav-btn-detail">
+                    </a>
+                </li>
+                <li>
+                    <div id="nav-logo">
+                            <a href="#nav-bar">
+                                <img src="assets/img/logo_escura.svg" alt="Logo-escura" >
+                            </a>
+                            <a href="#nav-bar">
+                                <p>Palavras cafeinadas</p>
+                            </a>
+                            <a href="#" >
+                                <img src="assets/img/Menu-mob.svg" alt="Menu" class="menu-img" >
+                            </a>
+                    </div>
+                </li>
+                <li class="menu-hidden">
+                    <a href="#contato">
+                        <p>Contato</p>
+                        <img src="assets/img/detalhe.jpg" alt="detalhe do botão" class="nav-btn-detail">
+
+                    </a>
+                </li>
+                <li class="menu-hidden">
+                    <a>
+                        <p><img src="assets/img/Vector.svg" width="20px" alt="icone de telefone"> 19-991256972</p>
+                        <img src="assets/img/detalhe.jpg" alt="detalhe do botão" class="nav-btn-detail">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-mobile menu-hidden"> 
+            <ul class="nav-menu-mobile">
+                <li class="nav-menu-mobile-item"><a href="#nav-bar" class="nav-menu-mobile-link">Home</a></li>
+                <li class="nav-menu-mobile-item"><a href="#section-sobre-nos" class="nav-menu-mobile-link">Sobre nós</a></li>
+                <li class="nav-menu-mobile-item"><a href="" class="nav-menu-mobile-link">Cafeteria</a></li>
+                <li class="nav-menu-mobile-item"><a href="" class="nav-menu-mobile-link">Contato</a></li>
+            </ul>
+        </section>
+        <section id="section-banner">
+            <h1>Leia acompanhado de uma culinária de qualidade</h1>
+            <p>Aonde a paixão por livros e o amor por café sempre tem lugar á mesa.</p>
+            <button type="button" class="btn"> Venha conhecer </button>
+        </section>
+
+        <section id="section-sobre-nos">
+            <div class="section-column1">
+                <div class="box-decoration">
+                    <h1 class="font-emphasis">SOBRE NÓS</h2>
+                        <div class="box-decoration-detail"></div>
+                </div>
+                <p>A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</p>
+                <p>O sonho de Carolina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</p>
+                <button type="button" class="btn btn-sobre-nos">Fale conosco</button>
+            </div>
+            <div class="section-column2">
+                <img src="assets/img/imagem-cafe-sobre-nos.jpg" alt="Imagem de cafés" srcset=""> 
+            </div>
+        </section>
+        <div id="div-onda">
+            <div class="background-color-onda"></div>
+            <div class="vetor-onda wave">
+                <img src="assets/img/vectorOnda.svg" alt="">
+            </div>
+        </div>
+        <section id="section-cafeteria">
+            <div class="h2-detail">
+                <h2 class="font-emphasis">CAFETERIA</h2>
+                <img src="assets/img/detalhe.jpg" alt="detalhe do botão" class="nav-btn-detail">
+            </div>
+
+            <div class="carrosel-image">
+                <a href="#"  class="backArrow" onclick="prevImage()">
+                    <img src="assets/img/arrow_back_ios.svg" alt="carrosel para a esquerda" >
+                </a>
+                <div class="itens-carrosel hidden-class">
+                    <img src="assets/img/chocolate cake 1.jpg" alt="Foto de bolo de chocolate">
+                <div class="div-text-carrosel ">
+                    <h3>bolo de Chocolate</h3>
+                    <p>O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...</p>
+                </div> 
+                </div>
+                <div class="itens-carrosel">
+                    <img src="assets/img/sorvete cafe 1.jpg" alt="">
+                    <div class="div-text-carrosel ">
+                        <h3>Sorvete de Café</h3>
+                        <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
+                    </div>
+                </div>
+                <div class="itens-carrosel">
+                    <img src="assets/img/sorvete cafe 1.jpg" alt="">
+                    <div class="div-text-carrosel ">
+                        <h3>Sorvete de Café</h3>
+                        <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
+                    </div>
+                </div>
+                <div class="itens-carrosel" >
+                    <img src="assets/img/ginger bread 1.jpg" alt="">
+                    <div class="div-text-carrosel ">
+                        <h3>Pão de mel</h3>
+                        <p>O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite......</p>
+                    </div>
+                </div>
+                <div class="itens-carrosel">
+                    <img src="assets/img/sorvete cafe 1.jpg" alt="">
+                    <div class="div-text-carrosel ">
+                        <h3>Sorvete de Café</h3>
+                        <p>O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...</p>
+                    </div>
+                </div>
+                <div class="itens-carrosel">
+                    <img src="assets/img/Brigadeiro 1.jpg" alt="">
+                    <div class="div-text-carrosel ">
+                        <h3>Brigadeiro de Capuccino</h3>
+                        <p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p>
+                    </div> 
+                 </div>
+                <a href="#" class="forwardArrow" onclick="nextImage()">
+                    <img src="assets/img/arrow_forward_ios.svg" alt="carrosel para a direita" >
+                </a>
+            </div>
+        </section>
+    </main>
+    <section id="contato">
+        <h2 class="font-emphasis">
+            <div class="box-decoration">    
+                <p>Entre em contato</p>
+                <div class="box-decoration-detail"></div>
+            </div>
+        </h2>
+        <section class="div-contato-content">
+            <section class="section-contato">
+                <adress>
+                    <p><img src="assets/img/icon-phone.png" alt="icone de telefone" class="icons-contato"> 19-991256972</p>
+                    <p><img src="assets/img/icon-email.png" alt="icone de email" class="icons-contato"> contato@gmail.com</p>
+                    <p><img src="assets/img/icon-local.png" alt="icone de local" class="icons-contato"> Av. Paulista, 1324 - Bela Vista,<br> São Paulo - SP, <br>01310-100</p>
+                    <img src="assets/img/detalhe.jpg" alt="detalhe">
+                    <p><img src="assets/img/icon-instagram.png" alt="icone do Instagram" class="icons-contato"> @Palavrascafeinadas</p>
+                    <p><img src="assets/img/icon-facebook.png" alt="icone do Facebook" class="icons-contato"> Palavras Cafeinadas</p>
+                </adress>
+
+                <div class="div-logo-contato">
+                    <img src="assets/img/logo-claro.png" alt="Logo Palavras cafeinadas">
+                    <p>Palavras Cafeinadas</p>
+                </div>
+            </section>
+            <form action="" class="form-cadastro">
+                <label for="input-nome">Nome</label>
+                <input type="text" name="nome" id="input-nome" class="input-cadastro">
+                <label for="input-email">E-mail</label>
+                <input type="text" name="email" id="input-email" class="input-cadastro">
+                <label for="input-mensagem">Mensagem</label>
+                <textarea type="text" name="mensagem" id="input-mensagem" rows="10" cols="33" class="input-cadastro"></textarea></textarea>
+                <button type="submit" class="btn">Enviar mensagem</button>
+            </form>
+            <section>
+                <div class="div-redes-sociais">
+                    <p>NOS ENCONTRE AQUI</p>
+                    <a href="#" target="_blank"><img src="assets/img/Vector-2.svg" alt="Logo Facebook"  ></a>
+                    <a href="#"target="_blank"><img src="assets/img/Vector-1.svg" alt="Logo Instagram" ></a>
+                    <a href="#"target="_blank"><img src="assets/img/Vector.svg" alt="Logo telefone" ></a>
+                </div>
+            </section>
+            </section>
+        </section>
+    <footer>
+        <span>Desenvolvido por Felipe Gomes</span>
+        <span>Todos os direitos reservados ©</span>
+    </footer>
+
+    <!-- <script src="assets/js/main.js"></script> -->
+     <script>
+        let indexCurrent = 0;
+        const images = document.querySelectorAll('.itens-carrosel');
+        const totalImages = images.length;
+        const imagesHidden = window.innerWidth >= 720 ? 3 : 1;
+        const carroselImage = document.querySelector('.carrosel-image');
+        const menu = document.querySelector('.menu-img');
+        const navMenu = document.querySelector('.menu-mobile');
+        let flag = 0;
+        let flagContinuos;
+        menu.addEventListener(('click'), e => {
+            navMenu.classList.toggle('menu-hidden');
+        });
+
+        carroselImage.addEventListener('click', (e) => {    
+        e.preventDefault();
+        });
+
+        function showImages(index) {
+            images.forEach((img, i) => {                    
+                if(imagesHidden !== 1) {
+                    img.classList.remove('hidden-class');
+                    if (i >= index && i < index + imagesHidden) {
+                        img.classList.toggle('hidden-class');
+                    }
+                }   
+            });
+        }
+
+        let prevPosition = 0;
+        let nextPosition = 0;
+
+        function prevImage() {
+            indexCurrent = (indexCurrent - imagesHidden + totalImages) % totalImages;
+            if(flag === 0) {
+                flag++;
+                images[5].classList.add('hidden-class');
+            }
+            
+            showImages(indexCurrent);
+            images[indexCurrent].classList.add('hidden-class');
+            console.log(indexCurrent, prevPosition);
+            prevPosition = (indexCurrent - imagesHidden + totalImages) % totalImages;
+            if (flagContinuos === 1) {
+                prevPosition = ((indexCurrent - 1) - imagesHidden + totalImages) % totalImages;
+            }
+            console.log(indexCurrent, prevPosition);
+            images[prevPosition].classList.remove('hidden-class');
+            flagContinuos = 0;
+        }
+
+        function nextImage() {
+            indexCurrent = (indexCurrent + imagesHidden) % totalImages;
+            showImages(indexCurrent);
+            if(flag === 0) {
+                flag++;
+                images[5].classList.add('hidden-class');
+            }
+            images[indexCurrent].classList.add('hidden-class'); 
+            console.log(indexCurrent, nextPosition);
+            nextPosition = (indexCurrent + imagesHidden) % totalImages;
+            if (flagContinuos === 0) {
+                prevPosition = ((indexCurrent + 1) - imagesHidden + totalImages) % totalImages;
+            }
+            console.log(indexCurrent, nextPosition);
+            images[nextPosition].classList.remove('hidden-class');
+            flagContinuos = 1;
+        }
+
+        window.addEventListener('load', () => {
+            const widthWindow = window.innerWidth;
+            hiddenDivs(images, widthWindow);
+        });
+
+        function hiddenDivs(images, widthWindow) {
+            let i = 0;
+            const numberDivsHidden = (widthWindow > 720) ? 3 : 5;
+
+            for(let i=0; i < numberDivsHidden; i++) {
+                images[i].classList.add('hidden-class');  
+            }
+        }   
+
+        showImages(indexCurrent);
+     </script>
+</body>
+</html>

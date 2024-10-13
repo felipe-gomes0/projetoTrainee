@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-branco: #F0F0F0;
+    --color-castanho-suave: #EBDACC;
+    --color-castanho-medio: #E2C196;
+    --color-bege-detalhe: #FBC9A8;
+    --color-castanho: #B2784A;
+    --color-marrom: #8F542E;
+    --color-marrom-forte: #57290B;
+    --color-marrom-escuro: #1F0C00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    font-family:'opens sans',sans-serif;
+}
+
+
+#nav-bar {
+    position: fixed;
+    background: var(--color-marrom-forte);
+    font-size: 1.2em;
+    width: 100%;
+    z-index: 2;
+    height: 6.3em;
+    padding-top: 0.5em;
+}
+
+#nav-bar ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width: 720px) {
+
+    .menu-hidden {
+        display: none;
+        opacity: 1;
+    }
+
+    #nav-bar {
+        height: fit-content;
+        padding-top: 0.3em;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        width: 100%;
+    }
+    
+    #nav-bar > ul >  li {
+        width: 100%;
+    }
+     
+    #nav-logo {
+        align-self: center;
+        display: flex;   
+        width: 100%;
+    }
+
+    #nav-logo > a {
+        display: flex;
+        text-decoration: none;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        color: var(--color-branco);
+        font-size: 1em;
+    }
+
+    #nav-logo > a > p {
+        font-size: 1.1em;
+    }
+
+    .nav-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.5em;
+        background-color: white;
+        width: 100%;
+        height: fit-content;
+        row-gap: 1em;
+        padding: 2em 0em;
+    }
+
+    .nav-menu-mobile-item {
+        display: block;
+        border: 0px;
+        background-color: white;
+        padding: 1em 1em;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 8px;
+        box-shadow: -4px 7px 19px 4px #1F0C0033;
+
+    }
+    .nav-menu-mobile-link {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: black;
+    }
+
+    #section-banner {
+        background-image: url(/assets/img/background-mobile.jpg);
+        padding: 8em 2em;
+    }
+
+    #section-banner h1 {
+        font-size: 2.5em;
+        margin-bottom: 2em;
+    }
+
+    #section-banner p {
+        display: none;
+    }
+
+    #section-sobre-nos {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        column-gap: 2em;
+        padding: 4em 0;
+        height: 24em;
+        width: 100%;
+    }
+
+    #section-sobre-nos p {
+        font-size: 1.3em;
+        margin-left: -1em;
+        margin-bottom: 1em;
+    } 
+
+    .section-column2 {
+        display: none;
+    }
+    
+    .section-column1 {
+        width: 80%;
+    }
+
+    .section-column1 button {
+        margin: 2em auto;
+    }
+
+    #div-onda {
+        height: 7em;
+        position: relative; 
+        width: 100%;
+    }
+    
+    .vetor-onda img{
+        width: 100%;
+    }
+    
+    .background-color-onda {
+        position: absolute;
+        bottom: 0; 
+        height: 5em;
+        background-size: cover;
+        width: 100%;
+        background-color: var(--color-marrom);
+    }
+    
+    .wave {
+        position: absolute;
+        top: 0;
+        background-size: contain;
+        z-index: 1;
+        width: 100%;
+        background-repeat: no-repeat;   
+    }   
+    .carrosel-image {
+        overflow: hidden;
+    }
+
+    .carrosel-image > div {
+        max-width: 18em;
+    }
+
+    .itens-carrosel {
+        display: none;
+        width: 100%;    
+    }
+
+    #contato {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contato h2 {
+        margin-bottom: 1em;
+
+    }
+    #contato h2 p {
+        font-size: 2em;
+        z-index: 1;
+        margin-bottom: 0.09em;
+    }
+
+    #contato > h2 > div > p {
+        width: 7em;
+    }
+
+    .div-contato-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form-cadastro {
+        box-shadow: -4px 7px 29px rgba(0, 0, 0, 0.205);
+        border-radius: 20px;
+        background-color: white;
+        width: 100%;
+    }
+
+    .section-contato {
+        display: none;
+    }   
+
+    .div-redes-sociais {
+        margin: 2em 0;
+        text-align: center;
+    }
+
+    .div-redes-sociais p {
+        font-size: 1.5em;
+    }
+
+    .div-redes-sociais img {
+        width: 4em;
+        margin: 0 1.5em;
+    }
+    .div-redes-sociais p {
+        align-self: center;
+        margin: 1em 0;
+    }
+
+
+}
+
+@media (min-width: 721px) {
+    #nav-bar ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        column-gap:7%;
+        padding-bottom: 0.5em;
+    }
+
+    #nav-bar a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-branco);
+    }
+
+    #nav-bar li {
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    #nav-logo {
+        margin: 0 1em;
+    }
+
+    .menu-img {
+        display: none;
+    }
+
+    #section-sobre-nos {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        column-gap: 2em;
+        padding: 4em 0;
+        height: 24em;
+        width: 100%;
+    }
+
+    #section-banner {
+        padding: 8em 5em;
+    }
+    
+    #section-banner h1 {
+        font-size: 3.5em;
+        max-width: 10em;
+    }
+
+    #section-banner p {
+        margin: 1em 0;
+        font-size: 1.5em;
+        max-width: 20em;
+    }
+    
+    .section-column1 {
+        width: 40%;
+    }   
+
+    #div-onda {
+        height: 9.4em;
+
+        position: relative; 
+        width: 100%;
+    }
+    
+    .vetor-onda img{
+        width: 100%;
+    }
+    
+    .background-color-onda {
+        position: absolute;
+        bottom: 0; 
+        height: 4.5em;
+        background-size: contain;
+        width: 100%;
+        background-color: var(--color-marrom);
+    }
+    
+    .wave {
+        position: absolute;
+        top: 0;
+        background-size: contain;
+        z-index: 1;
+        width: 100%;
+        background-repeat: no-repeat;   
+    }   
+
+    #section-cafeteria {
+        width: 100%;
+        background-color: var(--color-marrom-forte);
+        display: flex;
+        flex-direction: column;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .h2-detail {
+        margin-bottom: 1em;
+        font-size: 2.5em;
+    }
+
+    #section-cafeteria div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-branco);
+    }
+
+    .carrosel-image > div {
+        width: 20em;
+    }
+
+    #contato h2 {
+        margin-left: 3em;
+        margin-bottom: 2em;
+    }
+    
+    #contato h2 p {
+        font-size: 2em;
+        z-index: 1;
+        margin-bottom: 0.09em;
+    }
+
+    .form-cadastro {
+        background-color: #F5F3ED;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .form-cadastro input {
+        height: 3.5em;
+    }
+
+    .input-cadastro {
+        border-radius: 8px;
+        border: 1px solid var(--color-marrom);
+        margin-bottom: 1.5em;
+    }
+
+    .div-contato-content {
+        margin: auto;
+        width: 85%;
+        display: flex;
+        border-radius: 9px;
+        background-color: var(--color-marrom);
+        color: var(--color-branco);
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.548);
+    }
+    
+    .div-contato-content section {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        line-height: 2em;
+        font-weight: bold;
+        flex-grow: nowrap;
+    }
+
+    .div-contato-content > :last-child{
+        display: none;
+    }
+
+    .div-contato-content p {
+        display: flex;
+        align-items: center;
+        margin: 0.3em;
+        max-width: 17em;
+    }
+
+    .icons-contato {
+        margin-right: 0.3em;
+    }
+
+    .section-contato {
+        width: 40%;
+    }
+
+    .section-contato > adress >  img {
+        height: 2px;
+        width: 70%;
+        margin: 1em 0.2em;
+    }
+
+    .div-logo-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-logo-contato img {
+        max-width: 10em;
+    }
+
+} /*Fim media query 721px*/
+
+#nav-logo img {
+    margin-bottom: 0.6em;
+    width: 2.4em;
+}
+
+
+
+#section-banner {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-branco);
+    background-image: url(/assets/img/background.png);
+    background-size: contain;
+    min-height: 13em;
+    height: auto;
+    width: auto;
+}
+
+#section-sobre-nos {
+    padding-bottom: 12em;
+}
+
+#section-sobre-nos h1 {
+    font-size: 2.5em;
+    z-index: 1;
+}
+
+#section-sobre-nos p {
+    margin-top: 2em;
+}   
+
+#section-sobre-nos img {
+    max-width: 20em;
+}
+
+#section-cafeteria {
+    width: 100%;
+    background-color: var(--color-marrom);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8em;
+    padding-bottom: 5em;
+}
+
+.h2-detail {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+}
+
+#section-cafeteria div:nth-child(1) {
+    font-style: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-branco);
+    font-family: "Cormorant Garamond";
+}
+
+.carrosel-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 1em;
+    margin: auto;
+    
+}
+
+.carrosel-image > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    padding-bottom: 3em;
+    
+}
+
+.div-text-carrosel {
+    margin: 0 1em;
+    width: 90%;
+    height: 8em;
+}
+
+.carrosel-image > div > img {
+    margin: 1em 1em;
+    width: 90%;
+    border-radius: 8px;
+}
+
+.carrosel-image > a > img {
+    margin: 0 1em;
+    width: 2em;
+}
+
+#contato {
+    display: flex;
+    padding: 3em 0;
+    flex-direction: column;
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2em;
+    color: var(--color-marrom-escuro);
+    font-weight: bold;
+}
+
+.form-cadastro input {
+    height: 3.5em;
+}
+
+.input-cadastro {
+    border-radius: 8px;
+    border: 1px solid var(--color-marrom);
+    margin-bottom: 1.5em;
+}
+
+footer {
+    padding: 1em 5em;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 2em;
+    background-color: var(--color-marrom-forte);
+    color: var(--color-branco);
+}
+
+
+.btn-sobre-nos {
+    margin: 3em 0em;
+}
+
+.btn {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-branco);
+    border: 0;
+    background-color: var(--color-marrom);
+    height: 3em;
+    width: fit-content;
+    padding: 0.8em 2em;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.btn::after {
+    margin-left: 0.5em;
+    content: url(/assets/img/Buttons/Union.svg);
+}
+
+.btn:hover {
+    background-color: var(--color-castanho);
+}
+
+.box-decoration {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.box-decoration-detail {
+    position: absolute;
+    z-index: 0;
+    background-color: var(--color-bege-detalhe);
+    height: 50%;
+    width: 112%;
+    bottom: 6%;
+}
+
+.font-emphasis {
+    font-family: "Cormorant Garamond",serif;
+}
+
+.nav-btn-detail {
+    width: 3em;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.itens-carrosel {
+    display: block;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.hidden-class {
+    display: none !important;
+    opacity: 0;
+}
